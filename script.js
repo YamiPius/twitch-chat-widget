@@ -1,5 +1,5 @@
 const tmiClient = new tmi.Client({
-  channels: ['lulith']
+  channels: ['Lulith']
 });
 tmiClient.connect();
 
