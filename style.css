@@ -27,27 +27,32 @@ body { background: transparent; font-family: 'IM FELL Double Pica', serif; }
 
 .chat-bubble {
   position: relative;
-  display: inline-flex; align-items: center;
+  display: inline-flex; flex-direction: column;
+  align-items: flex-start;
   background: rgba(0, 0, 0, 0.75);
   border: 3px solid #C61215;
   border-radius: 999px;
-  height: 66px; width: 66px; max-width: 460px;
-  padding: 0 3px 0 10px;
+  padding: 10px 10px 10px 10px;
+  max-width: 460px; /* Max-Breite */
   overflow: hidden;
 }
 
 .chat-text {
-  flex: 1; margin-right: 10px;
   color: white; font-size: 1rem; line-height: 1.4;
-  opacity: 0; overflow: hidden;
-  white-space: nowrap; text-overflow: ellipsis;
+  opacity: 0;
+  white-space: normal;
+  word-break: break-word;
+  word-wrap: break-word;
+  margin-right: 10px;
 }
 
 .chat-icon {
-  position: absolute; top: 50%; left: 3px;
+  align-self: center;
   width: 60px; height: 60px;
-  transform: translateY(-50%);
+  margin-top: 5px;
   filter: drop-shadow(0 0 6px #C61215);
 }
 
-.chat-icon svg { width: 100%; height: 100%; }
+.chat-icon svg {
+  width: 100%; height: 100%;
+}
