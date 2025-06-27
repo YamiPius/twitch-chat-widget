@@ -1,6 +1,6 @@
 // Twitch Chat Verbindung mit lokalem tmi.js
 const tmiClient = new tmi.Client({
-  channels: ['DEIN_KANALNAME']  // <-- Deinen Twitch-Kanal einsetzen
+  channels: ['lulith']  // <-- Deinen Twitch-Kanal einsetzen
 });
 tmiClient.connect();
 
