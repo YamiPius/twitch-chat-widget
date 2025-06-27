@@ -1,5 +1,5 @@
 const tmiClient = new tmi.Client({
-  channels: ['DEIN_KANALNAME'] // ← hier deinen Twitch-Kanalnamen eintragen
+  channels: ['lulith'] // ← hier deinen Twitch-Kanalnamen eintragen
 });
 tmiClient.connect();
 
